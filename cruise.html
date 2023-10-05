@@ -3,6 +3,8 @@
 <head>
     <title>Goes on a cruise</title>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <body>
     <h1>Tanniru Abhinaya goes on a cruise</h1>
     <form>
@@ -13,7 +15,7 @@
         <input type="checkbox" id="poolPass" value="False"> Pool Pass
         <label for="poolPass"></label><br>
     </form>
-    <input type="button" value="Select a cruise" onclick="selectCruise()">
+    <input type="button" class="btn btn-primary" value="Select a cruise" onclick="selectCruise()"><br> <br> <br>
     <div id="results"></div>
     <script>
         let my_cruise = {};
@@ -30,7 +32,7 @@
         <input type="text" id="daysInput"><br>
         <label for="priceInput">Enter price</label>
         <input type="text" id="priceInput"><br>
-        <input type="button" value="Update the cruise" onclick="updateCruise()">
+        <input type="button" class="btn btn-primary" value="Update the cruise" onclick="updateCruise()">
     </form>
     <script>
         function updateCruise() {
